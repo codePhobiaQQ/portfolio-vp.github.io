@@ -1,11 +1,15 @@
 import { FullRoundButton } from 'components/atoms';
 import Icons from 'components/icons';
+import { Icon } from '@iconify/react';
 import React, { useEffect } from 'react';
 import ContactSectionProps from 'components/organisms/Contact/types';
 import Animated from 'components/animations';
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { forwardRef } from 'react';
+
+import telegramIcon from '@iconify/icons-logos/telegram';
+// import vkIcon from '@iconify/icons-logos/v';
 
 const Contact = forwardRef<HTMLElement | undefined, ContactSectionProps>(
   ({ title, content }: ContactSectionProps, ref) => {
@@ -54,15 +58,15 @@ const Contact = forwardRef<HTMLElement | undefined, ContactSectionProps>(
           </a>
           <div className="flex items-center mt-8 md:mt-0">
             <Animated.FromDirection from="bottom" animate={controls} custom={2.2} delay={0.6}>
-              <FullRoundButton as="a" href={socials.facebook} label="Facebook">
-                <Icons.Facebook className="w-6" />
+              <FullRoundButton as="a" className="mr-6" href={socials.telegram} label="Facebook">
+                <Icon icon={telegramIcon} className="w-12 h-12" />
               </FullRoundButton>
             </Animated.FromDirection>
-            <Animated.FromDirection from="bottom" animate={controls} custom={2.4} delay={0.6}>
-              <FullRoundButton as="a" href={socials.twitter} className="mx-6" label="Twitter">
-                <Icons.Twitter className="w-6" />
+            {/* <Animated.FromDirection from="bottom" animate={controls} custom={2.4} delay={0.6}>
+              <FullRoundButton as="a" href={socials.vk} className="mx-6" label="Twitter">
+                <Icon icon={telegramIcon} className="w-6" />
               </FullRoundButton>
-            </Animated.FromDirection>
+            </Animated.FromDirection> */}
             <Animated.FromDirection from="bottom" animate={controls} custom={2.6} delay={0.6}>
               <FullRoundButton as="a" href={socials.instagram} label="Instagram">
                 <Icons.Instagram className="w-6" />

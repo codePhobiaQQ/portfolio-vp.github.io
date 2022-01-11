@@ -6,8 +6,8 @@ import { HighlightedTextIcon } from 'components/molecules';
 
 const Text = () => (
   <>
-    I’ve spent about two years on improving my skills in{' '}
-    <span className="font-bold text-gray-800">website development</span> using{' '}
+    Около двух лет я совершенствовал своих навыков{' '}
+    <span className="font-bold text-gray-800">в разработке веб-приложений</span> с использованием{' '}
     <HighlightedTextIcon
       as="a"
       href="https://php.net"
@@ -16,11 +16,11 @@ const Text = () => (
     >
       PHP
     </HighlightedTextIcon>{' '}
-    and{' '}
+    и{' '}
     <HighlightedTextIcon className="mx-2" icon={<Icon icon={javascriptIcon} />}>
       Javascript
     </HighlightedTextIcon>{' '}
-    that I’m now pretty confident in building apps using these tools:
+    сейчас же я создаю приложений с использованием следующих инструментов:
   </>
 );
 

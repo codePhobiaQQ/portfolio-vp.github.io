@@ -3,7 +3,7 @@ import { Icon } from '@iconify/react';
 import reactIcon from '@iconify/icons-logos/react';
 import tailwindcssIcon from '@iconify/icons-logos/tailwindcss-icon';
 import laravelIcon from '@iconify/icons-logos/laravel';
-import codeigniterIcon from '@iconify/icons-logos/codeigniter';
+import nestjsIcon from '@iconify/icons-logos/nestjs';
 import postCssIcon from '@iconify/icons-logos/postcss';
 import bootstrapIcon from '@iconify/icons-logos/bootstrap';
 import nextjsIcon from '@iconify/icons-logos/nextjs';
@@ -19,7 +19,7 @@ const skills = [
     <Icon className="text-5xl" icon={laravelIcon} />
   </a>,
   <a href="https://codeigniter.com" className="focus:outline-none">
-    <Icon className="text-6xl" icon={codeigniterIcon} />
+    <Icon className="text-6xl" icon={nestjsIcon} />
   </a>,
   <a href="https://postcss.org" className="focus:outline-none">
     <Icon className="text-5xl" icon={postCssIcon} />
