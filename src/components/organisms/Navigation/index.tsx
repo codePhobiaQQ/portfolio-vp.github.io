@@ -1,6 +1,5 @@
 import Animated from 'components/animations';
-import { MainMenu, TextSelect } from 'components/molecules';
-import { TextSelectOptionProps } from 'components/molecules/TextSelect/types';
+import { MainMenu } from 'components/molecules';
 import { LocaleProps } from 'contexts/language';
 import React from 'react';
 import { useState } from 'react';
@@ -13,22 +12,9 @@ interface Props {
   className?: string;
 }
 
-export default function Navigation({ locale, sections, className }: Props) {
+export default function Navigation({ sections, className }: Props) {
   const [animationFinish, setAnimationFinish] = useState(false);
-  const languageOptions: TextSelectOptionProps[] = [
-    { label: 'English', value: 'en' },
-    { label: 'Indonesia', value: 'id' },
-  ];
 
-  const selectedLanguage =
-    languageOptions.find(option => option.value === locale.value) || languageOptions[0];
-
-  const setSelectedLanguage = (option: TextSelectOptionProps) => {
-    if (option.value === 'en' || option.value === 'id') {
-      locale.change(option.value);
-    }
-  };
-  
   return (
     <nav>
       <Animated.FromDirection

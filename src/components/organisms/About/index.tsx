@@ -1,8 +1,7 @@
 import Animated from 'components/animations';
-import { ContentText, RoundedButton } from 'components/atoms';
+import { ContentText } from 'components/atoms';
 import { SectionTitle } from 'components/molecules';
-import { LanguageContext } from 'contexts';
-import React, { useContext } from 'react';
+import React from 'react';
 import AboutSectionProps from 'components/organisms/About/types';
 import { useAnimation } from 'framer-motion';
 import { useEffect } from 'react';
@@ -15,7 +14,6 @@ const About = forwardRef<HTMLElement | undefined, AboutSectionProps>(
     const [refView, inView] = useInView({
       threshold: 0.5,
     });
-    const language = useContext(LanguageContext);
 
     useEffect(() => {
       if (inView) {
