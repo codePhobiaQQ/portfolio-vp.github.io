@@ -23,11 +23,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "watch:style": "postcss ./src/assets/css/styles.css -o ./src/assets/css/app.css -w",
-    "build:style": "postcss ./src/assets/css/styles.css -o ./src/assets/css/app.css --env production",
     "start": "react-scripts start",
-    "dev": "concurrently \"yarn watch:style\" \"yarn start\"",
-    "build": "yarn build:style && react-scripts build",
+    "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
