@@ -14,12 +14,12 @@ const projects: ProjectCardDataProps[] = [
     type: 'github',
     url: 'https://project-sales.ru',
   },
-  // {
-  //   title: 'Overflow',
-  //   description: 'TailwindCSS Admin Dashboard Template.',
-  //   type: 'dribbble',
-  //   url: 'https://dribbble.com/shots/11877395-Overflow-TailwindCSS-Admin-Dashboard-Template',
-  // },
+  {
+    title: 'Cello App',
+    description: 'NextJs + StrApi + NestJs. Находится в разработке. Разработка frontend и backend части сайта. Поддержка сайта.',
+    type: 'dribbble',
+    url: 'https://cello.vercel.app/',
+  },
   // {
   //   title: 'kos-manager',
   //   description: 'Lodgement management application. Developed with Laravel, Inertiajs, and React.',
